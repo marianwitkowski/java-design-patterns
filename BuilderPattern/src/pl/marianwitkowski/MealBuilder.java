@@ -7,7 +7,7 @@ import pl.marianwitkowski.food.VegeBurger;
 
 public class MealBuilder {
 
-
+    //
     public Meal prepareVegeMeal (){
         Meal meal = new Meal();
         meal.addItem(new VegeBurger());
