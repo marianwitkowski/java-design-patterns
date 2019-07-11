@@ -1,1 +1,3 @@
-# java-design-patterns
+# Wzorce projektowe
+
+JAVAwwa19
