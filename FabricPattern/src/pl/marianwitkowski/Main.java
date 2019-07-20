@@ -6,9 +6,9 @@ public class Main {
 
 	    VehicleFactory vehicleFactory = new VehicleFactory();
 
-	    Vehicle vehicle1 = vehicleFactory.getVehicle("Audi");
-        Vehicle vehicle2 = vehicleFactory.getVehicle("BMW");
-        Vehicle vehicle3 = vehicleFactory.getVehicle("Mercedes");
+	    Vehicle vehicle1 = vehicleFactory.createVehicle("Audi");
+        Vehicle vehicle2 = vehicleFactory.createVehicle("BMW");
+        Vehicle vehicle3 = vehicleFactory.createVehicle("Mercedes");
 
         vehicle1.go();
         vehicle2.go();

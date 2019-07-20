@@ -8,7 +8,8 @@ public class BankAccount {
     private double balance;
     private double interestRate;
 
-    public BankAccount(long accountNumber, String owner, String branch, double balance, double interestRate) {
+    public BankAccount(long accountNumber, String owner, String branch,
+                       double balance, double interestRate) {
         this.accountNumber = accountNumber;
         this.owner = owner;
         this.branch = branch;
@@ -18,6 +19,10 @@ public class BankAccount {
 
     public long getAccountNumber() {
         return accountNumber;
+    }
+
+    public void setFacta() {
+
     }
 
     public void setAccountNumber(long accountNumber) {

@@ -28,7 +28,9 @@ public class RealTextFile implements TextFile {
 
     private String loadFromDisk(String fileName) throws IOException {
         System.out.println("Loading " + fileName);
-        return new String(Files.readAllBytes(Paths.get(fileName)), StandardCharsets.UTF_8).trim();
+        String result = new String(Files.readAllBytes(Paths.get(fileName)),
+                StandardCharsets.UTF_8).trim();
+        return result;
     }
 }
 

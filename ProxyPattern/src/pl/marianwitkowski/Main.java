@@ -7,7 +7,7 @@ public class Main {
         TextFile textFile = new ProxyTextFile("/Users/marian/Downloads/hello.txt");
 
         for (int i=0;i<5;i++) {
-            System.out.println("========================");
+            System.out.println(String.format("====== STEP # %d ==========", i+1));
             textFile.print();
         }
 

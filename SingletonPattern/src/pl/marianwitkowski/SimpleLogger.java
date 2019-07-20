@@ -23,12 +23,14 @@ public class SimpleLogger {
             FileWriter fw = new FileWriter(logFile);
             writer = new PrintWriter(fw, true);
         } catch (IOException e) {
+            e.printStackTrace();
         }
     }
 
     public static synchronized SimpleLogger getInstance() {
-        if (logger == null)
+        if (logger == null) {
             logger = new SimpleLogger();
+        }
         return logger;
     }
 
@@ -50,7 +52,7 @@ public class SimpleLogger {
 
     private void write(String s) {
         Date now = new Date();
-        SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ssZ");
+        SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ssZ"); //ISO 8601
         String nowStr = simpleDateFormat.format(now);
         writer.println(nowStr+" - "+s);
     }

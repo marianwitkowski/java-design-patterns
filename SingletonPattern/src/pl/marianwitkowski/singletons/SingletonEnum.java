@@ -1,6 +1,7 @@
 package pl.marianwitkowski.singletons;
 
 public enum SingletonEnum {
+
     INSTANCE;
 
     int value = 0;

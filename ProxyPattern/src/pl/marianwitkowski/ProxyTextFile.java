@@ -11,7 +11,7 @@ public class ProxyTextFile implements TextFile {
 
     @Override
     public void print() {
-        if(realTextFile == null){
+        if(realTextFile == null) {
             realTextFile = new RealTextFile(fileName);
         }
         realTextFile.print();

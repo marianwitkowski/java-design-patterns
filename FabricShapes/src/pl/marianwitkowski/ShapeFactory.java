@@ -7,12 +7,13 @@ public class ShapeFactory {
             return null;
         }
 
-        if(shape.equalsIgnoreCase("CIRCLE")){
+        if(shape.trim().equalsIgnoreCase("CIRCLE")) {
             Circle circle = new Circle();
             circle.setRadius(3);
             return circle;
+        }
 
-        } else if(shape.equalsIgnoreCase("TRAPEZOID")) {
+        if(shape.trim().equalsIgnoreCase("TRAPEZOID")) {
             Trapezoid trapezoid = new Trapezoid();
             trapezoid.setData(28,4,20, 20, 16);
             return trapezoid;

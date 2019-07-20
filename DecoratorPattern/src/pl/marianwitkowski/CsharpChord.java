@@ -1,6 +1,6 @@
 package pl.marianwitkowski;
 
-public class CsharpChord extends Chord {
+public class CsharpChord extends Tone {
 
     public void play() {
         playSound("C");

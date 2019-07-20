@@ -1,13 +1,17 @@
 package pl.marianwitkowski;
 
-import pl.marianwitkowski.singletons.SingletonEnum;
+
+import java.io.IOException;
 
 public class Main {
 
-    public static void main(String[] args) {
+
+    public static void main(String[] args)  throws IOException  {
 
         SingleObject object = SingleObject.getInstance();
         object.showMessage("Hello world!");
+
+
 
     }
 }

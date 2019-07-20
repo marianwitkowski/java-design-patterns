@@ -2,18 +2,20 @@ package pl.marianwitkowski;
 
 public class VehicleFactory {
 
-    public Vehicle getVehicle(String vehicleType){
-        if(vehicleType == null){
+    public Vehicle createVehicle(String vehicleType){
+        String s = "  AUDI   ";
+        s = s.toString(); // "AUDI"
+        if(vehicleType == null || vehicleType.trim().length()==0){
             return null;
         }
 
-        if(vehicleType.equalsIgnoreCase("AUDI")){
+        if(vehicleType.trim().equalsIgnoreCase("AuDi")){
             return new Audi();
 
-        } else if(vehicleType.equalsIgnoreCase("BMW")){
+        } else if(vehicleType.trim().equalsIgnoreCase("bmw")){
             return new Bmw();
 
-        } else if(vehicleType.equalsIgnoreCase("MERCEDES")){
+        } else if(vehicleType.trim().equalsIgnoreCase("MERCEDES")){
             return new Mercedes();
         }
         return null;
