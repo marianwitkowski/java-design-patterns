@@ -14,7 +14,7 @@ public class Main2 {
                 "user",
                 "password1",
                 485,
-                "TLS",
+                "SSL",
                 60);
 
         RecipientList recipientList = new RecipientList();
