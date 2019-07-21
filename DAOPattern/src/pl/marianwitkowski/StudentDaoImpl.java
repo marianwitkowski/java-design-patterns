@@ -1,14 +1,14 @@
 package pl.marianwitkowski;
 
+import java.sql.Struct;
 import java.util.ArrayList;
 import java.util.List;
 
 public class StudentDaoImpl implements StudentDao {
 
-    List<Student> students;
+    List<Student> students = new ArrayList<Student>();
 
     public StudentDaoImpl(){
-        students = new ArrayList<Student>();
         Student student1 = new Student("Jan", "Kowalski", 100);
         Student student2 = new Student("Adam", "Nowak", 101);
         Student student3 = new Student("Zygmunt", "Staszczyk", 102);
@@ -26,7 +26,12 @@ public class StudentDaoImpl implements StudentDao {
 
     @Override
     public Student getStudent(int rollNo) {
-        return students.stream().filter(s -> s.getRollNo() == rollNo).findFirst().get();
+        return students
+                .stream()
+                .filter(s -> s.getRollNo() == rollNo)
+                .findFirst()
+                .get();
+
     }
 
     @Override

@@ -6,7 +6,9 @@ public class EmailSenderExecutor {
     private Message message;
     private RecipientList recipientList;
 
-    public EmailSenderExecutor(EmailServerConnection serverConnection, Message message, RecipientList recipientList) {
+    public EmailSenderExecutor(EmailServerConnection serverConnection,
+                               Message message,
+                               RecipientList recipientList) {
         this.serverConnection = serverConnection;
         this.message = message;
         this.recipientList = recipientList;
