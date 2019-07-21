@@ -28,8 +28,10 @@ public class Main2 {
         Message message = new Message("Temat", "Hello world!", attachments);
 
 
-        EmailSenderExecutor emailSender = new
-                EmailSenderExecutor(emailServerConnection, message, recipientList);
+        EmailSenderExecutor emailSender = new EmailSenderExecutor(
+                emailServerConnection,
+                message,
+                recipientList);
         emailSender.send();
 
 
